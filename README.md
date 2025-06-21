@@ -5,6 +5,7 @@ A comprehensive deep learning-based system for real-time emotion recognition fro
 ## 🎯 Project Overview
 
 This project implements an end-to-end Speech Emotion Recognition (SER) system capable of classifying human emotions from audio recordings. The system leverages deep learning techniques to analyze acoustic features and predict emotional states with high accuracy across 8 different emotion categories.
+[Deployed Link](https://speech-emotion-recognize.streamlit.app/)
 
 ### Key Features
 
