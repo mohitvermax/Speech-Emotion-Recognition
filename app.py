@@ -54,9 +54,9 @@ st.markdown("""
 
 
 @st.cache_resource
-def load_emotion_model(model_path='newmodel/best_emotion_recognition_model.h5', 
-                      scaler_path='newmodel/scaler.pkl', 
-                      encoder_path='newmodel/label_encoder.pkl'):
+def load_emotion_model(model_path='model/emotion_recognition_model.h5', 
+                      scaler_path='model/scaler.pkl', 
+                      encoder_path='model/label_encoder.pkl'):
     """Load model and preprocessors with caching"""
     try:
         model = tf.keras.models.load_model(model_path)

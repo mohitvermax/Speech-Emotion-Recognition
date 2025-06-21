@@ -10,9 +10,9 @@ import argparse
 from pathlib import Path
 
 class EmotionPredictor:
-    def __init__(self, model_path='newmodel/best_emotion_recognition_model.h5', 
-                 scaler_path='newmodel/scaler.pkl', 
-                 encoder_path='newmodel/label_encoder.pkl'):
+    def __init__(self, model_path='model/emotion_recognition_model.h5', 
+                 scaler_path='model/scaler.pkl', 
+                 encoder_path='model/label_encoder.pkl'):
         """
         Initialize the emotion predictor with trained model and preprocessors
         """
@@ -344,11 +344,11 @@ class EmotionPredictor:
 
 def main():
     parser = argparse.ArgumentParser(description='Test Speech Emotion Recognition Model')
-    parser.add_argument('--model', default='newmodel/best_emotion_recognition_model.h5', 
+    parser.add_argument('--model', default='model/emotion_recognition_model.h5', 
                        help='Path to the trained model')
-    parser.add_argument('--scaler', default='newmodel/scaler.pkl', 
+    parser.add_argument('--scaler', default='model/scaler.pkl', 
                        help='Path to the scaler file')
-    parser.add_argument('--encoder', default='newmodel/label_encoder.pkl', 
+    parser.add_argument('--encoder', default='model/label_encoder.pkl', 
                        help='Path to the label encoder file')
     parser.add_argument('--file', help='Path to a single audio file to test')
     parser.add_argument('--directory', help='Path to directory containing audio files')
